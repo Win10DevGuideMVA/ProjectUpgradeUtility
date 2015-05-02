@@ -2,7 +2,7 @@
 # andy.wigley@microsoft.com
 
 # Get the version number of UAP (selects last subfolder)
-$FolderPath = "C:\Program Files (x86)\Windows Kits\10\Platforms\UAP"
+$FolderPath = "C:\Program Files (x86)\Windows Kits\8.2\Platforms\UAP"
 $UAPVersionNumber = Get-ChildItem -Path $FolderPath | Select-Object -Last 1 -ExpandProperty Name
 
 # Find the csproj file
